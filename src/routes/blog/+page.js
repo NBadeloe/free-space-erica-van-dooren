@@ -13,9 +13,6 @@ export async function load({}) {
       }
     `
   })
-  console.log(responseData.data.allArticles)
-  return {
-   data: responseData.data
-    }
 
+  return responseData.data;
 }
