@@ -1,20 +1,21 @@
 import { performGraphqlQuery } from '$lib/utils/query'
-
 export async function load({}) {
   // retrieve the articles to show on the homepage
   const responseData = await performGraphqlQuery({
     query: `
       {
-        allBlogs {
-    id
-    titel
-    _status
-    _firstPublishedAt
-  }
+        allArticles {
+          id
+          titel
+          slug
+          publicationDate: _firstPublishedAt
+        }
       }
     `
   })
+  console.log(responseData.data.allArticles)
+  return {
+   data: responseData.data
+    }
 
-
-  return responseData.data
 }

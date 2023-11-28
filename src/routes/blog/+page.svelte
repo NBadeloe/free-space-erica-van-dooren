@@ -1,23 +1,23 @@
+
 <script>
     import { StructuredText } from '@datocms/svelte';
     import { error } from '@sveltejs/kit';
     export let data;
-    const { blog } = data;
-    console.log(data)
-    if (!blog) {
-      throw error(404, { message: 'blog Not found' });
+    const { article } = data;
+    if (!article) {
+      throw error(404, { message: 'Article Not found' });
     }
   </script>
-  <div class="blog">
-    <h1 class="blog-title">
-      {blog.titel}
+  <div class="article">
+    <h1 class="article-title">
+      {article.title}
     </h1>
-    {#if blog.publicationDate}
-      <div class="blog-publication-date">
-        blog published on: {new Date(blog.publicationDate).toLocaleString()}
+    {#if article.publicationDate}
+      <div class="article-publication-date">
+        Article published on: {new Date(article.publicationDate).toLocaleString()}
       </div>
     {/if}
     <div>
-      <StructuredText data={blog.content} />
+      <StructuredText data={article.content} />
     </div>
   </div>
