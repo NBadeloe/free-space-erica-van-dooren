@@ -10,12 +10,12 @@ import Nav from "../lib/components/Nav.svelte";
 <main>
     <Nav/>
     <h1>Erica van Dooren</h1>
-
+   <img src="{items.afbeelding.url}" alt="">
     <section class="introductie">
        <article class="introductie-text"> 
          {@html items.introductie}
         </article>
-        <img src="{items.afbeelding.url}" alt="">
+        
      
 
     </section>
@@ -46,69 +46,52 @@ import Nav from "../lib/components/Nav.svelte";
         color: #fff;
     }
 
-    main{
+    @media screen and (max-width: 500px) {
+	main{
         background-color: #000;
         background-image: url(../assets/background.svg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        margin: 0;
-        padding: 0;
         width: 100%;
-        height: 99.9%;
         
     }
-     h1{
-        font-family: 'Libre Caslon Text', serif;
-        color: #fff;
-        font-size: 10em;
-        margin-top: 1em;
-        display: flex;
-        justify-content: center;
-     }
-     h2{
-        font-family: 'Libre Caslon Text', serif;
-     }
-     p{
-        font-family: 'Quicksand', sans-serif;
-     }
+
+    h1{
+      font-size: 9vw;
      
-     .introductie-text {
-        font-family:  'Quicksand', sans-serif;
-     }
-   
-     .introductie{
-        color: #fff;
-        margin: 10em;
-        display: flex;
-        justify-self: center;
-     }
+      margin-bottom: 10vw;
+    }
 
-     .introductie > img{
-        width: 22em;
-        height: 28em;
-        margin-left: 5em;
-     }
-
-     .introductie-text {
-       margin: 5em;
-       width: 45em;
-       height: 20em;
-     }
-
-     .werkzaamheden-section{
-        display: flex;
-        flex-direction: row;
-        margin: 10em;
-     }
-
-     .werkzaamheden, .gepubliceerde-verhalen{
+    .introductie{
       display: flex;
-      flex-direction: column;
-      width: 45em;
-      height: 20em;
-      margin: 5em;
-     }
+     
+    }
+
+   img{
+      display: flex;
+      margin: auto;
+      width: 50vw;
+      height: 50vw;
+      max-width: 100%;
+      object-fit: cover;
+      
+    }
+
+    .introductie-text{
+      font-size: 5vw;
+    }
+
+    
+
+    .werkzaamheden, .gepubliceerde-verhalen{
+      margin-bottom: 8vw;
+      width: 100%;
+      height: 70vw;
+    }
+}
+    
+     
    
 </style>
 

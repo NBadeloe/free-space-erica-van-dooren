@@ -1,12 +1,17 @@
-<nav> 
+<!-- <nav> 
     <a href="/portfolio">Portfolio</a>
     <a href="/">diensten</a>
     <h2><a href="/"> Erica van Dooren</a></h2>
     <a href="/blog">Blog</a>
     <a href="/">contacten</a>
-</nav>
+</nav> -->
 
 <style>
+ /*    @media screen and (max-width: 500px) {
+      nav{
+        display: none;
+     }
+    }
     nav{
         width: 100%;
         height: 5em;
@@ -36,6 +41,6 @@
      }
      a:focus {
         color: #8FD2FF;
-     }
+     } */
 
 </style>
