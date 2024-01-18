@@ -1,97 +1,147 @@
 <script>
-   import Footer from "../lib/components/Footer.svelte";
-import Nav from "../lib/components/Nav.svelte";
-   import Reviews from "../lib/components/reviews/Reviews.svelte";
+  import Footer from "../lib/components/Footer.svelte";
+  import Nav from "../lib/components/Nav.svelte";
+  import Reviews from "../lib/components/reviews/Reviews.svelte";
 
-   
-    export let data
-    const items = data?.homepage || []
+  export let data;
+  const items = data?.homepage || [];
 </script>
+
 <main>
-    <Nav/>
-    <h1>Erica van Dooren</h1>
-   <img src="{items.afbeelding.url}" alt="">
-    <section class="introductie">
-       <article class="introductie-text"> 
-         {@html items.introductie}
-        </article>
-        
-     
+  <Nav />
+  <h1>Erica van Dooren</h1>
+  <img src={items.afbeelding.url} alt="" />
+  <section class="introductie">
+    <article class="introductie-text">
+      {@html items.introductie}
+    </article>
+  </section>
+  <section class="werkzaamheden-section">
+    <section class="werkzaamheden">
+      <h2>werkzaamheden</h2>
+      <p>{@html items.werkzaamheden}</p>
+    </section>
+    <section class="gepubliceerde-verhalen">
+      <h2>Gepubliceerde verhalen</h2>
+      <p>
+        {@html items.gepubliceerdeVerhalen}
+      </p>
+    </section>
+  </section>
+  <Reviews />
 
-    </section>
-    <section class="werkzaamheden-section">
-      <section class="werkzaamheden">
-               <h2>werkzaamheden</h2>
-               <p>{@html items.werkzaamheden}
-               </p>
-         </section>
-         <section class="gepubliceerde-verhalen">
-            <h2>Gepubliceerde verhalen</h2>
-            <p>
-               {@html items.gepubliceerdeVerhalen}
-            </p>
-         </section>
-    </section>
-    <Reviews/>
-   
-  <Footer/>
+  <Footer />
 </main>
+
 <style>
+  @import url("https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Quicksand:wght@400;500;600&display=swap");
 
-  @import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Quicksand:wght@400;500;600&display=swap');
+  :global(body) {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+  }
 
-    :global(body) { 
-        margin: 0;
-        padding: 0;
-        color: #fff;
+  @media screen and (max-width: 500px) {
+    main {
+      background-color: #000;
+      background-image: url(../assets/background.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: 100%;
     }
 
-    @media screen and (max-width: 500px) {
-	main{
-        background-color: #000;
-        background-image: url(../assets/background.svg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        width: 100%;
-        
-    }
-
-    h1{
+    h1 {
       font-size: 9vw;
-     
+      margin: 2em;
       margin-bottom: 10vw;
+      width: max-content;
+      height: max-content;
     }
 
-    .introductie{
+    .introductie {
       display: flex;
-     
     }
 
-   img{
+    img {
       display: flex;
       margin: auto;
       width: 50vw;
       height: 50vw;
       max-width: 100%;
       object-fit: cover;
-      
     }
 
-    .introductie-text{
+    .introductie-text {
       font-size: 5vw;
+      margin: 2em;
     }
 
-    
-
-    .werkzaamheden, .gepubliceerde-verhalen{
-      margin-bottom: 8vw;
+    .werkzaamheden,
+    .gepubliceerde-verhalen {
+      margin-top: 1em;
       width: 100%;
-      height: 70vw;
+      height: 55vw;
     }
-}
-    
-     
-   
-</style>
 
+    .werkzaamheden-section {
+      margin: 2em;
+    }
+  }
+
+  /* desktop */
+  main {
+      background-color: #000;
+      background-image: url(../assets/background.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: 100%;
+    }
+
+    h1 {
+      font-size: 9vw;
+      margin: 0.5em auto;
+      width: max-content;
+      height: max-content;
+    }
+
+    .introductie {
+      display: flex;
+      justify-self: flex-end;
+    }
+
+    img {
+      display: flex;
+      float: right;
+      margin-right: 12em;
+      width: 20vw;
+      height: 30vw;
+      object-fit: cover;
+    }
+
+    .introductie-text {
+      font-size: 2vw;
+      margin: 1em 6em;
+      width: 20em;
+    }
+
+    .werkzaamheden-section{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: max-content;
+      height: 25em;
+      margin: 8em auto;
+      gap: 8em;
+    }
+
+    .gepubliceerde-verhalen, .werkzaamheden{
+      margin: 2em;
+      width: 25em;
+      height: 10em;
+    }
+
+
+</style>

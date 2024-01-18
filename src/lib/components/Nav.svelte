@@ -1,18 +1,30 @@
-<!-- <nav> 
-    <a href="/portfolio">Portfolio</a>
-    <a href="/">diensten</a>
-    <h2><a href="/"> Erica van Dooren</a></h2>
-    <a href="/blog">Blog</a>
-    <a href="/">contacten</a>
-</nav> -->
+<script>
+   import { Hamburger } from 'svelte-hamburgers';
+   let open;
+</script>
+<Hamburger --color="white" bind:open />
+
+{#if open}
+    <nav> 
+      <a href="/portfolio">Portfolio</a>
+      <a href="/diensten">Diensten</a>
+      <a href="/blog">Blog</a>
+      <a href="/contact">Contact</a>
+   </nav>
+
+{/if} 
+<!-- <h2><a href="/"> Erica van Dooren</a></h2> -->
+
 
 <style>
- /*    @media screen and (max-width: 500px) {
+   @media screen and (max-width: 500px){
       nav{
-        display: none;
-     }
-    }
-    nav{
+         background-color: blue;
+      }
+   }
+
+    /* nav{
+      background-color: black;
         width: 100%;
         height: 5em;
         margin: 0;
@@ -41,6 +53,6 @@
      }
      a:focus {
         color: #8FD2FF;
-     } */
+     }  */
 
 </style>

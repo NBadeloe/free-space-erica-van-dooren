@@ -1,173 +1,73 @@
+<script>
+  import ReviewCard from "./ReviewCard.svelte";
+</script>
 
-    <section class="review">
-        
-
-           <article class="card-img">
-              <h3> img</h3>
-           </article>
-  
-           <article class="card-content">
-              <h3> Naam</h3>
-              <q> 
-              uis sodales. Aenean quis commodo urta nunc. Curabitur blandit rutrum
-              </q>
-           </article>
-
-           <article class="card-img">
-            <h3> img</h3>
-         </article>
-
-         <article class="card-content">
-            <h3> Naam</h3>
-            <q> 
-            uis sodales. Aenean quis commodo urta nunc. Curabitur blandit rutrum
-            </q>
-         </article>
-
-         <article class="card-img">
-            <h3> img</h3>
-         </article>
-
-         <article class="card-content">
-            <h3> Naam</h3>
-            <q> 
-            uis sodales. Aenean quis commodo urta nunc. Curabitur blandit rutrum
-            </q>
-         </article>
-
-         <article class="card-img">
-            <h3> img</h3>
-         </article>
-
-         <article class="card-content">
-            <h3> Naam</h3>
-            <q> 
-            uis sodales. Aenean quis commodo urta nunc. Curabitur blandit rutrum
-            </q>
-         </article>
-
-         <article class="card-img">
-            <h3> img</h3>
-         </article>
-
-         <article class="card-content">
-            <h3> Naam</h3>
-            <q> 
-            uis sodales. Aenean quis commodo urta nunc. Curabitur blandit rutrum
-            </q>
-         </article>
-
-         <article class="card-img">
-            <h3> img</h3>
-         </article>
-
-         <article class="card-content">
-            <h3> Naam</h3>
-            <q> 
-            uis sodales. Aenean quis commodo urta nunc. Curabitur blandit rutrum
-            </q>
-         </article>
-
-         <article class="card-img">
-            <h3> img</h3>
-         </article>
-
-         <article class="card-content">
-            <h3> Naam</h3>
-            <q> 
-            uis sodales. Aenean quis commodo urta nunc. Curabitur blandit rutrum
-            </q>
-         </article>
-
-         <article class="card-img">
-            <h3> img</h3>
-         </article>
-
-         <article class="card-content">
-            <h3> Naam</h3>
-            <q> 
-            uis sodales. Aenean quis commodo urta nunc. Curabitur blandit rutrum
-            </q>
-         </article>
-
-         <article class="card-img">
-            <h3> img</h3>
-         </article>
-
-         <article class="card-content">
-            <h3> Naam</h3>
-            <q> 
-            uis sodales. Aenean quis commodo urta nunc. Curabitur blandit rutrum
-            </q>
-         </article>
-    
-      </section>
+<section class="review">
+  <ReviewCard naam='jemoeder' review='jevader' url='https://www.google.com/url?sa=i&url=https%3A%2F%2Ftwitter.com%2Fstupidcatsfr&psig=AOvVaw2ZRk8YVJZkZr3HpaGCN2sz&ust=1705656053545000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCLCvj4zO5oMDFQAAAAAdAAAAABAD'/>
+  <ReviewCard naam='jemoeder' review='jevader' url='https://www.google.com/url?sa=i&url=https%3A%2F%2Ftwitter.com%2Fstupidcatsfr&psig=AOvVaw2ZRk8YVJZkZr3HpaGCN2sz&ust=1705656053545000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCLCvj4zO5oMDFQAAAAAdAAAAABAD' />
+  <ReviewCard naam='jemoeder' review='jevader' url='https://www.google.com/url?sa=i&url=https%3A%2F%2Ftwitter.com%2Fstupidcatsfr&psig=AOvVaw2ZRk8YVJZkZr3HpaGCN2sz&ust=1705656053545000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCLCvj4zO5oMDFQAAAAAdAAAAABAD'/>
+  <ReviewCard naam='jemoeder' review='jevader' url='https://www.google.com/url?sa=i&url=https%3A%2F%2Ftwitter.com%2Fstupidcatsfr&psig=AOvVaw2ZRk8YVJZkZr3HpaGCN2sz&ust=1705656053545000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCLCvj4zO5oMDFQAAAAAdAAAAABAD'/>
+  <ReviewCard naam='jemoeder' review='jevader' url='https://www.google.com/url?sa=i&url=https%3A%2F%2Ftwitter.com%2Fstupidcatsfr&psig=AOvVaw2ZRk8YVJZkZr3HpaGCN2sz&ust=1705656053545000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCLCvj4zO5oMDFQAAAAAdAAAAABAD'/>
+  <ReviewCard naam='jemoeder' review='jevader' url='https://www.google.com/url?sa=i&url=https%3A%2F%2Ftwitter.com%2Fstupidcatsfr&psig=AOvVaw2ZRk8YVJZkZr3HpaGCN2sz&ust=1705656053545000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCLCvj4zO5oMDFQAAAAAdAAAAABAD'/>
+  <ReviewCard naam='jemoeder' review='jevader' url='https://www.google.com/url?sa=i&url=https%3A%2F%2Ftwitter.com%2Fstupidcatsfr&psig=AOvVaw2ZRk8YVJZkZr3HpaGCN2sz&ust=1705656053545000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCLCvj4zO5oMDFQAAAAAdAAAAABAD' />
+  <ReviewCard naam='jemoeder' review='jevader' url='https://www.google.com/url?sa=i&url=https%3A%2F%2Ftwitter.com%2Fstupidcatsfr&psig=AOvVaw2ZRk8YVJZkZr3HpaGCN2sz&ust=1705656053545000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCLCvj4zO5oMDFQAAAAAdAAAAABAD'/>
+  <ReviewCard naam='jemoeder' review='jevader' url='https://www.google.com/url?sa=i&url=https%3A%2F%2Ftwitter.com%2Fstupidcatsfr&psig=AOvVaw2ZRk8YVJZkZr3HpaGCN2sz&ust=1705656053545000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCLCvj4zO5oMDFQAAAAAdAAAAABAD'/>
+</section>
 
 <style>
+  @media screen and (max-width: 500px) {
+    .review {
+      border-radius: 8px;
 
-@media screen and (max-width: 500px) {
-   .review{
-      border: 1px solid #e9e9e9;
-        border-radius: 8px;
-        box-shadow: 0 3px 16px 2px rgba(0, 0, 0, 0.1);
-        padding: 24px;
-        position: relative;
-        top: 0;
-        width: 15em;
-        font-size: smaller;
+      padding: 24px;
+      position: relative;
+      top: 0;
+      width: 15em;
+      font-size: smaller;
+    }
 
-      /* width: 24em;
-      margin: 1em auto;
-      display: flex;
-      flex-direction: row;
-      overflow-x: scroll; 
-      overflow: hidden; */
-   }
+    ::-webkit-scrollbar-track {
+      border: 1px solid rgb(255, 255, 255);
+      background-color: #000000;
+    }
 
-}
-   .review{
-      overflow: auto;
-      display: flex;
-      scroll-snap-type: x mandatory;
-      gap: 24px;
+    ::-webkit-scrollbar {
+      width: 10px;
+      background-color: #000000;
+    }
 
-      height: fit-content;
-      margin-left: 2em;
+    ::-webkit-scrollbar-thumb {
+      background-color: #ffffff;
+    }
+  }
 
-      /* width: 80em;
+  .review {
+    overflow: auto;
+    display: flex;
+    scroll-snap-type: x mandatory;
+    gap: 24px;
+    height: fit-content;
+    margin: auto;
+    width: 70em;
+  }
+
+  /* width: 80em;
       margin: 2em auto;
       display: flex;
       flex-direction: row;
       overflow-x: scroll;  */
-   }
-  
-/* elke set van 2 heeft een andere kleur */
-      article{
-         width: 10em;
-         height: 15em;
-         margin: 2em;
-         padding: 1em;
-         flex-shrink: 0;
-         background-color: #000;
-      border: #fff 1px solid;
-     
-  
-     }
-       article:nth-child(6n+3){
-      border: #d9ff00 1px solid;
-     }
-     article:nth-child(6n+4){
-      border: #d9ff00 1px solid;
-     }
 
-     article:nth-child(6n+5){
-      border: #001aff 1px solid;
-     }
-     article:nth-child(6n+6){
-      border: #001aff 1px solid;
-     }
-     
+  ::-webkit-scrollbar-track {
+    border: 1px solid rgb(255, 255, 255);
+    background-color: #000000;
+  }
 
+  ::-webkit-scrollbar {
+    width: 10px;
+    background-color: #000000;
+  }
 
- 
+  ::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
+  }
 </style>
