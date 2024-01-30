@@ -5,14 +5,15 @@ export async function load({}) {
     query: `
       {
         allArticles {
+          typeofpost
+          slug
           id
           titel
-          slug
-          publicationDate: _firstPublishedAt
         }
       }
     `
   })
+  console.log(responseData)
 
   return responseData.data;
 }

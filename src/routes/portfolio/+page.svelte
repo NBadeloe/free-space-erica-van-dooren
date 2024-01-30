@@ -6,14 +6,7 @@
 <main>
   <Nav />
   <h2>Portfolio</h2>
-  <table role="table">
-    <thead role="rowgroup">
-      <tr role="row">
-        <th role="columnheader">First Name</th>
-        <th role="columnheader">Last Name</th>
-        <th role="columnheader">Job Title</th>
-      </tr>
-    </thead>
+  <table role="table">   
     <tbody role="rowgroup">
       <tr role="row">
         <td role="cell">
@@ -194,27 +187,28 @@
     and (max-width: 760px), (min-device-width: 768px) 
     and (max-device-width: 1024px)  {
 
-		/* Force table to not be like tables anymore */
-		table, thead, tbody, th, td, tr {
-			display: block;
-		}
 
-		/* Hide table headers (but not display: none;, for accessibility) */
-		thead tr {
-			position: absolute;
-			top: -9999px;
-			left: -9999px;
+      h2 {
+      font-size: 2em;
+      margin: 1.5em 0em 1em 1.5em;
+    }
+		/* Force table to not be like tables anymore */
+		table, tbody, td, tr {
+			display: block;
 		}
 
     tr {
       margin: 0 0 1rem 0;
     }
       
-    tr:nth-child(odd) {
-      background: #ccc;
+    tr:nth-child(3n + 1) {
+      border: #8FD2FF 1px solid;
     }
-    tr:nth-child(even) {
-      background: #ff0000;
+    tr:nth-child(3n + 2) {
+      border: #24A0FF 1px solid;
+    }
+    tr:nth-child(3n + 3) {
+      border: #24A0FF 1px solid;
     }
     
 		td {
@@ -234,12 +228,17 @@
 			padding-right: 10px;
 			white-space: nowrap;
 		}
+
+    a{
+        color: #fff;
+        text-decoration: none;
+    } 
     }
 
 
  
-
-  @media screen and (min-width: 501px) {
+/* desktop */
+  @media screen and (min-width: 761px) {
     main {
       background-color: #000;
       margin: 0;
@@ -251,18 +250,21 @@
       font-size: 2.5em;
       margin: 1.5em 0em 1em 10em;
     }
+     table{
+      border: #8FD2FF 3px solid;
+      padding: 5em 1em 5em 5em;
+      margin: auto;
+     }
 
-    /* section{
-        display: flex;
-        margin: 5em auto ;
-        width: 70em;
-        height: 40em;
-        
-    }
+     td{
+      gap: 2em;
+      width: 15em;
+      height: 2em;
+     }
   
     a{
         color: #fff;
         text-decoration: none;
-    } */
+    } 
   }
 </style>

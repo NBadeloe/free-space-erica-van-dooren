@@ -40,9 +40,67 @@
     margin: 0;
     padding: 0;
     color: #fff;
+    background-color: #000;
   }
 
-  @media screen and (max-width: 500px) {
+  /* desktop */
+  main {
+    background-color: #000;
+    background-image: url(../assets/background.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 9vw;
+    margin: 0.5em auto;
+    width: max-content;
+    height: max-content;
+  }
+
+  .introductie {
+    display: flex;
+    justify-self: flex-end;
+  }
+
+  img {
+    display: flex;
+    float: right;
+    margin-right: 12em;
+    width: 20vw;
+    height: 30vw;
+    object-fit: cover;
+  }
+
+  .introductie-text {
+    font-size: 2vw;
+    margin: 1em 6em;
+    width: 20em;
+  }
+
+  .werkzaamheden-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: max-content;
+    height: 25em;
+    margin: 8em auto;
+    gap: 8em;
+  }
+
+  .gepubliceerde-verhalen,
+  .werkzaamheden {
+    margin: 2em;
+    width: 25em;
+    height: 10em;
+  }
+ 
+  /* mobile */
+  @media only screen 
+    and (max-width: 760px), (min-device-width: 768px) 
+    and (max-device-width: 1024px) {
     main {
       background-color: #000;
       background-image: url(../assets/background.svg);
@@ -62,11 +120,12 @@
 
     .introductie {
       display: flex;
+      flex-direction: column;
     }
 
     img {
       display: flex;
-      margin: auto;
+      margin-right: 7em;
       width: 50vw;
       height: 50vw;
       max-width: 100%;
@@ -74,74 +133,25 @@
     }
 
     .introductie-text {
-      font-size: 5vw;
-      margin: 2em;
+      font-size: 4vw;
+      margin: 14em 2em 2em 2em;
     }
 
     .werkzaamheden,
     .gepubliceerde-verhalen {
       margin-top: 1em;
-      width: 100%;
-      height: 55vw;
+      margin: 1em;
+      width: 24em;
+      height: 20em;
     }
 
     .werkzaamheden-section {
       margin: 2em;
+      display: flex;
+      flex-direction: column;
+      gap: 2em;
+      height: fit-content;
+      width: 70em;
     }
   }
-
-  /* desktop */
-  main {
-      background-color: #000;
-      background-image: url(../assets/background.svg);
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      width: 100%;
-    }
-
-    h1 {
-      font-size: 9vw;
-      margin: 0.5em auto;
-      width: max-content;
-      height: max-content;
-    }
-
-    .introductie {
-      display: flex;
-      justify-self: flex-end;
-    }
-
-    img {
-      display: flex;
-      float: right;
-      margin-right: 12em;
-      width: 20vw;
-      height: 30vw;
-      object-fit: cover;
-    }
-
-    .introductie-text {
-      font-size: 2vw;
-      margin: 1em 6em;
-      width: 20em;
-    }
-
-    .werkzaamheden-section{
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      width: max-content;
-      height: 25em;
-      margin: 8em auto;
-      gap: 8em;
-    }
-
-    .gepubliceerde-verhalen, .werkzaamheden{
-      margin: 2em;
-      width: 25em;
-      height: 10em;
-    }
-
-
 </style>
