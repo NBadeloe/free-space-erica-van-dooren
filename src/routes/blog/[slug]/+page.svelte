@@ -11,12 +11,16 @@
     <h1 class="article-title">
       {article.titel}
     </h1>
-    {#if article.publicationDate}
-      <div class="article-publication-date">
-        Article published on: {new Date(article.publicationDate).toLocaleString()}
-      </div>
-    {/if}
+  
     <div class="article-content">
-      <StructuredText data={article.content} />
+  
+     {@html article.content}
     </div>
   </div>
+
+  <style>
+    *{
+      background-color: #000;
+      color: #fff;
+    }
+  </style>

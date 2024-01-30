@@ -14,11 +14,12 @@
        <div class="article-cards" style="border-color:var(--{article.typeofpost});">
         <a href="blog/{article.slug}">
           <div class="article-card">
-            <div class="article-title">
+            <h2 class="article-title">
               {article.titel}
-              {article.typeofpost}
+              </h2>
+              <img src="{article.afbeelding.url}" alt="">
+              <h3>{article.typeofpost}</h3>
             </div>
-          </div>
         </a></div>
       {/each}
     
@@ -38,8 +39,8 @@ main{
   .articles {
     display: grid;
     justify-content: center;
-    grid-template-columns: 10em 10em 10em;
-    grid-template-rows: repeat(auto-fill, minmax(15em , 1fr));
+    grid-template-columns: 15em 15em 15em;
+    grid-template-rows: repeat(auto-fill, minmax(20em , 1fr));
     gap: 5em;
     grid-auto-flow: row;
     grid-template-areas:
@@ -50,11 +51,38 @@ main{
   }
 
   .article-cards{
-    padding: 1em;
-    background-color: pink;
-
+    padding: 0.5em;
+    background-color: #000;
     border: 3px #fff solid;
-    width: 10em;
-    height: 15em;
+    width: 15em;
+    height: 20em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
   }
+
+a{
+  text-decoration: none;
+  color: #fff;
+}
+img{
+  object-fit: contain;
+  width: 8em;
+  height: 10em;
+}
+h1 {
+  display: flex;
+    font-size: 2vw;
+
+    width: max-content;
+    height: max-content;
+  }
+h2{
+  font-size: 1vw;
+
+}
+h3{
+  font-size: 0.8vw;
+}
 </style>

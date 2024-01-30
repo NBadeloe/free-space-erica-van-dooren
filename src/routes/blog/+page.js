@@ -9,6 +9,9 @@ export async function load({}) {
           slug
           id
           titel
+          afbeelding {
+            url
+          }
         }
       }
     `

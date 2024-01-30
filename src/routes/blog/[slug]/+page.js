@@ -7,11 +7,10 @@ export async function load({ params }) {
       query BlogPostQuery($slug: String!) {
         article(filter: { slug: { eq: $slug } }) {
           titel
-          slug
-          publicationDate: _firstPublishedAt
-          content {
-            value
-            blocks
+          id
+          content
+          afbeelding {
+            url
           }
         }
       }
