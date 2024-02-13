@@ -9,7 +9,7 @@
   <Nav/>
 <div>
   <div class="title">
-    <h1>Blog Posts</h1>
+    <h1>Blog</h1>
   </div>
   <div class="articles">
    
@@ -35,9 +35,18 @@
     --Interview: #2969FF;
     --Verslag: #8FD2FF; 
 }
+h1 {
+    font-family: "Libre Caslon Text", serif;
+  }
+  h2 {
+    font-family: "Quicksand", sans-serif;
+  }
+  @import url("https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Quicksand:wght@400;500;600&display=swap");
+
 main{
     background-color: #000;
     color: #FFF;
+    margin:0;
 }
   .articles {
     display: grid;
