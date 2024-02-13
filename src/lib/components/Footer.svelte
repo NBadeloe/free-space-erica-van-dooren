@@ -1,4 +1,4 @@
-<!-- <footer>
+ <footer>
     <section class="footer-socials">
         <a href="https://www.linkedin.com/in/erica-van-dooren-224b3635/"><img src="../assets/linkedin.svg" alt="" width="20" height="20"></a>
         <a href="https://www.facebook.com/ericavandooren"><img src="../assets/facebook.svg" alt="" width="20" height="20"></a>
@@ -13,7 +13,7 @@
         <p>BTW-nummer: NL183913553B01</p>
         <p>KvK-nummer: 39092777</p> 
     </section>
-</footer> -->
+</footer> 
 
 <style>
 

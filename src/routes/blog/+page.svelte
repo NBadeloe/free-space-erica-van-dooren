@@ -1,9 +1,12 @@
 <script>
+  import Nav from "../../lib/components/Nav.svelte";
+
   export let data;
 
   const articles = data?.allArticles || [];
 </script>
 <main>
+  <Nav/>
 <div>
   <div class="title">
     <h1>Blog Posts</h1>
@@ -74,9 +77,9 @@ img{
 h1 {
   display: flex;
     font-size: 2vw;
-
     width: max-content;
     height: max-content;
+    margin: 2em 13em;
   }
 h2{
   font-size: 1vw;

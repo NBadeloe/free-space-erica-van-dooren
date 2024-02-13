@@ -1,26 +1,52 @@
 <script>
-    import { StructuredText } from '@datocms/svelte';
-    import { error } from '@sveltejs/kit';
-    export let data;
-    const { article } = data;
-    if (!article) {
-      throw error(404, { message: 'Article Not found' });
-    }
-  </script>
-  <div class="article">
+  import { StructuredText } from "@datocms/svelte";
+  import { error } from "@sveltejs/kit";
+  import Nav from "../../../lib/components/Nav.svelte";
+  import Footer from "../../../lib/components/Footer.svelte";
+  export let data;
+  const { article } = data;
+  if (!article) {
+    throw error(404, { message: "Article Not found" });
+  }
+</script>
+<Nav/>
+<main>
+  <section class="article">
     <h1 class="article-title">
       {article.titel}
     </h1>
-  
-    <div class="article-content">
-  
-     {@html article.content}
-    </div>
-  </div>
 
-  <style>
-    *{
-      background-color: #000;
-      color: #fff;
-    }
-  </style>
+    <section class="article-content">
+      {@html article.content}
+    </section>
+  </section>
+</main>
+
+<Footer/>
+
+<style>
+  :global(:root) {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background-color: #000;
+  }
+  * {
+    background-color: #000;
+    color: #fff;
+  }
+  main {
+    background-color: #000;
+    margin: 0;
+  }
+
+  .article {
+    margin: 10em auto;
+    width: 50em;
+    height: max-content;
+  }
+
+  h1 {
+    margin-bottom: 2em;
+  }
+</style>

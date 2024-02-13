@@ -2,10 +2,12 @@
 	import copywriter from "../../lib/components/tabs/copywriter.svelte";
 	import schrijfcoach from "../../lib/components/tabs/schrijfcoach.svelte";
     import redactie from "../../lib/components/tabs/redactie.svelte";
+  import Nav from "../../lib/components/Nav.svelte";
+  import Footer from "../../lib/components/Footer.svelte";
 
 	let tabs = [
 		{ name: "copywriter", comp: copywriter },
-		{ name: "schrijfcoach", comp: schrijfcoach },
+		{ name: "schrijfcoach", comp: schrijfcoach},
         { name: "redactie", comp: redactie}
 	];
 
@@ -17,9 +19,12 @@
 		{tab.name}
 	</button>
 {/each}
+
 <main>
+	<Nav/>
 	<svelte:component this={cur.comp} />
 </main>
+<Footer/>
 
 <style>
     *{

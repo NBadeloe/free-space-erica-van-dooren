@@ -13,7 +13,7 @@
   <img src={items.afbeelding.url} alt="" />
   <section class="introductie">
     <article class="introductie-text">
-      {@html items.introductie}
+       <p>{@html items.introductie}</p>
     </article>
   </section>
   <section class="werkzaamheden-section">
@@ -41,6 +41,12 @@
     padding: 0;
     color: #fff;
     background-color: #000;
+  }
+  h1, h2{
+    font-family: "Libre Caslon Text", serif;
+  }
+  p {
+    font-family: "Quicksand", sans-serif ;
   }
 
   /* desktop */
@@ -101,6 +107,12 @@
   @media only screen 
     and (max-width: 760px), (min-device-width: 768px) 
     and (max-device-width: 1024px) {
+      h1, h2{
+    font-family: "Libre Caslon Text", serif;
+  }
+  p {
+    font-family: "Quicksand", sans-serif ;
+  }
     main {
       background-color: #000;
       background-image: url(../assets/background.svg);

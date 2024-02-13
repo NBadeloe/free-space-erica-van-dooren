@@ -41,6 +41,15 @@
     background-color: #000;
   }
 
+  h2 {
+    font-family: "Libre Caslon Text", serif;
+  }
+  form, p, input, textarea,  button{
+    font-family: "Quicksand", sans-serif;
+  }
+  @import url("https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Quicksand:wght@400;500;600&display=swap");
+
+
   form {
     border: 1px black solid;
     display: flex;

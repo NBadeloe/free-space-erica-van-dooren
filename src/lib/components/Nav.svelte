@@ -6,6 +6,7 @@
 
 {#if open}
     <nav> 
+      <a href="/">Home</a>
       <a href="/portfolio">Portfolio</a>
       <a href="/diensten">Diensten</a>
       <a href="/blog">Blog</a>
@@ -13,31 +14,50 @@
    </nav>
 
 {/if} 
-<!-- <h2><a href="/"> Erica van Dooren</a></h2> -->
 
 
 <style>
-   @media screen and (max-width: 500px){
-      nav{
-         background-color: blue;
-      }
-   }
+  
+    /* nav {
+        text-align: center;
+        font-size: 1.5em;
+        letter-spacing: 0.15em;
+        padding: 1em;
+        padding-top: 0;
+        color: #fff;
+    }
+    a {
+        cursor: pointer;
+        width: max-content;
+        margin: 1rem auto;
+        text-decoration: none;
+        color: #fff;
+    }
+    a:hover {
+        text-decoration: underline;
+    } */
+   a {
+   font-family: "Quicksand", sans-serif ;
+   font-weight: 200;
+   font-size: 2em;
+  }
+  @import url("https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Quicksand:wght@400;500;600&display=swap");
 
-    /* nav{
+   nav{
       background-color: black;
         width: 100%;
         height: 5em;
         margin: 0;
         display: flex;
         justify-content: center;
-        border: 1px solid #fff;
+   
         color: #fff;
      }
 
      a{
         color: #fff;
         font-family: 'Quicksand', sans-serif;       
-        margin: 2em;
+        margin: 1em;
         justify-content: space-evenly;
         flex-direction: column;
         list-style: none;
@@ -53,6 +73,6 @@
      }
      a:focus {
         color: #8FD2FF;
-     }  */
+     }  
 
 </style>
