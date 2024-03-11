@@ -1,8 +1,10 @@
 <script>
     import Footer from "../../lib/components/Footer.svelte";
-import Nav from "../../lib/components/Nav.svelte"
+   import Nav from "../../lib/components/Nav.svelte"
 </script>
+
 <Nav/>
+
 <main>
   <section class="contact">
     <section class="contact-text">

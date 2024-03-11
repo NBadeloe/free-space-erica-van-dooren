@@ -1,24 +1,39 @@
 <script>
-	import Tab1 from "./Tab1.svelte";
-	import Tab2 from "./Tab2.svelte";
-	import Tab3 from "./Tab3.svelte";
-  import Tabs from "./Tabs.svelte";
+	import Tabs from './Tabs.svelte';
+	import TabPanel from './TabPanel.svelte';
+	import TabList from './TabList.svelte';
+	import Tab from './Tab.svelte';
 
-  // List of tab items with labels, values and assigned components
-  let items = [
-    { label: "Copywriter",
-		 value: 1,
-		 component: Tab1
-		},
-    { label: "Redactie",
-		 value: 2,
-		 component: Tab2
-		},
-    { label: "Schrijfcoach",
-		 value: 3,
-		 component: Tab3
-		}
-  ];
+    export let data;
+    const ass = data;
+	
+	let selectedId = "first";
 </script>
 
-<Tabs {items} />
+<button on:click={() => { selectedId = selectedId === "first" ? "third" : "first" }}>
+	Change tab from outside to {selectedId === "first" ? "third" : "first"}
+</button>
+
+<Tabs {selectedId}>
+	<TabList>
+		<Tab id="first">shithea
+		</Tab>
+		<Tab id="second">two</Tab>
+		<Tab id="third">three</Tab>
+	</TabList>
+
+	<TabPanel id="first">
+		{@html ass.copywriter }
+	</TabPanel>
+
+	<TabPanel id="second">
+		<h2>Second panel</h2>
+	</TabPanel>
+
+	<TabPanel id="third">
+		<h2>Third panel</h2>
+	</TabPanel>
+</Tabs>
+<style>
+    
+</style>
