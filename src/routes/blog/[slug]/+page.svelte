@@ -49,4 +49,18 @@
   h1 {
     margin-bottom: 2em;
   }
+  /* mobile */
+  @media only screen and (max-width: 1024px),
+    (min-device-width: 768px) and (max-device-width: 1024px){
+
+
+  .article{
+   
+      font-size: 4vw;
+      margin: 2em;
+      width: unset;
+      text-align:start;
+    
+  }
+}
 </style>

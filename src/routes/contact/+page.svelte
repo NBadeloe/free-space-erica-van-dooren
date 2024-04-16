@@ -92,7 +92,8 @@
     margin-top: 0;
   }
 
-  @media screen and (max-width: 1000px) {
+  @media only screen and (max-width: 1024px),
+    (min-device-width: 768px) and (max-device-width: 1024px) {
     main {
       background-color: #000;
       width: 100%;
@@ -103,8 +104,10 @@
     border: 1px black solid;
     display: flex;
     flex-direction: column;
-    width: 30em;
+    width: min-content;
     height: 30em;
+    margin: 2em;
+
   }
 
   input,
@@ -116,7 +119,6 @@
     border: #8fd2ff 3px solid;
     background-color: #000;
     color: #fff;
-    margin: 1em;
   }
   textarea{
     height: 10em;
@@ -126,7 +128,7 @@
   .contact-text {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: center;
     margin: auto;
     
@@ -134,9 +136,10 @@
   .contact-text {
     flex-direction: column;
     align-items: flex-start;
-    width:28em;
-    height: 10em;
-    margin-top: 4em;
+    width: auto;
+    height: min-content;
+    margin:1em 2em;
+    text-align: inherit;
   }
 
   }

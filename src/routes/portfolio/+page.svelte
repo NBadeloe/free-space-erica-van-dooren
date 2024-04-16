@@ -151,7 +151,8 @@
     }
 
     tr {
-      margin: 0 0 1rem 0;
+      margin: 2em auto;
+      width: 24em
     }
 
     tr:nth-child(3n + 1) {

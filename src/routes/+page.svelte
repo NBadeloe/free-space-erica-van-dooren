@@ -13,7 +13,7 @@
   <img src={items.afbeelding.url} alt="" />
   <section class="introductie">
     <article class="introductie-text">
-       <p>{@html items.introductie}</p>
+      <p>{@html items.introductie}</p>
     </article>
   </section>
   <section class="werkzaamheden-section">
@@ -42,11 +42,12 @@
     color: #fff;
     background-color: #000;
   }
-  h1, h2{
+  h1,
+  h2 {
     font-family: "Libre Caslon Text", serif;
   }
   p {
-    font-family: "Quicksand", sans-serif ;
+    font-family: "Quicksand", sans-serif;
   }
 
   /* desktop */
@@ -102,29 +103,29 @@
     width: 25em;
     height: 10em;
   }
- 
+
   /* mobile */
-  @media only screen 
-    and (max-width: 760px), (min-device-width: 768px) 
-    and (max-device-width: 1024px) {
-      h1, h2{
-    font-family: "Libre Caslon Text", serif;
-  }
-  p {
-    font-family: "Quicksand", sans-serif ;
-  }
+  @media only screen and (max-width: 1024px),
+    (min-device-width: 768px) and (max-device-width: 1024px) {
+    h1,
+    h2 {
+      font-family: "Libre Caslon Text", serif;
+    }
+    p {
+      font-family: "Quicksand", sans-serif;
+    }
     main {
       background-color: #000;
       background-image: url(../assets/background.svg);
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
-      width: 100%;
+      width: 101.5%;
     }
 
     h1 {
       font-size: 9vw;
-      margin: 2em;
+      margin: 1em;
       margin-bottom: 10vw;
       width: max-content;
       height: max-content;
@@ -136,8 +137,10 @@
     }
 
     img {
-      display: flex;
-      margin-right: 7em;
+      display: block;
+  margin-left: auto;
+  margin-right: auto;
+      float: none;
       width: 50vw;
       height: 50vw;
       max-width: 100%;
@@ -146,24 +149,24 @@
 
     .introductie-text {
       font-size: 4vw;
-      margin: 14em 2em 2em 2em;
+      margin: 2em;
     }
 
     .werkzaamheden,
     .gepubliceerde-verhalen {
-      margin-top: 1em;
-      margin: 1em;
-      width: 24em;
-      height: 20em;
+  
+      text-align: justify;
+      font-size: 3vw;
+      height: min-content;
     }
 
     .werkzaamheden-section {
-      margin: 2em;
       display: flex;
       flex-direction: column;
+      width: min-content;
+      height: min-content;
+      margin: 2em auto;
       gap: 2em;
-      height: fit-content;
-      width: 70em;
     }
   }
 </style>
