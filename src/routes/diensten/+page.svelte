@@ -30,14 +30,12 @@
 	</TabPanel>
 
 	<TabPanel id="second">
-		<h1>Second panel</h1>
 		<section class="tabBody">
 			{@html tabData.schrijfcoach.content }
 		</section>
 	</TabPanel>
 
 	<TabPanel id="third">
-		<h1>Third panel</h1>
 		<section class="tabBody">
 		{@html tabData.redactie.manuscript }
 		{@html tabData.redactie.redigeren }
