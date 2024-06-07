@@ -1,10 +1,11 @@
 <script>
   import Footer from "../lib/components/Footer.svelte";
   import Nav from "../lib/components/Nav.svelte";
+  import ReviewCard from "../lib/components/reviews/ReviewCard.svelte";
   import Reviews from "../lib/components/reviews/Reviews.svelte";
-
   export let data;
-  const items = data?.homepage || [];
+  const items = data.homepage;
+  const revData = data?.allReviews || [];
 </script>
 
 <main>
@@ -28,8 +29,15 @@
       </p>
     </section>
   </section>
-  <Reviews />
 
+{#each revData as rData}
+<ReviewCard>
+  naam= "{rData.name}"
+  review={rData.content}"
+  url={rData.afbeelding.url}
+</ReviewCard>
+
+{/each}
   <Footer />
 </main>
 

@@ -5,23 +5,29 @@ export async function load({}) {
   const responseData = await performGraphqlQuery({
     query: `
       {
-        homepage{
-            introductie 
-          werkzaamheden
-          gepubliceerdeVerhalen
+        allReviews {
+          content
+          name
           afbeelding {
             url
           }
-
-          introducties{
-            value
+        }
+        homepage {
+          gepubliceerdeVerhalen
+          werkzaamheden
+          afbeelding {
+            url
+          }
+          introductie
+          introducties {
             blocks
+            value
           }
         }
       }
     `
   })
-console.log(responseData)
+console.log(responseData.data)
   return responseData.data;
   
 }

@@ -1,53 +1,12 @@
 <script>
   import ReviewCard from "./ReviewCard.svelte";
+  export let data;
+  const reviews = data?.allReviews || [];
 </script>
 
 <section class="review">
-  <ReviewCard
-    naam="jemoeder"
-    review="jevader"
-    url="https://www.google.com/url?sa=i&url=https%3A%2F%2Ftwitter.com%2Fstupidcatsfr&psig=AOvVaw2ZRk8YVJZkZr3HpaGCN2sz&ust=1705656053545000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCLCvj4zO5oMDFQAAAAAdAAAAABAD"
-  />
-  <ReviewCard
-    naam="jemoeder"
-    review="jevader"
-    url="https://www.google.com/url?sa=i&url=https%3A%2F%2Ftwitter.com%2Fstupidcatsfr&psig=AOvVaw2ZRk8YVJZkZr3HpaGCN2sz&ust=1705656053545000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCLCvj4zO5oMDFQAAAAAdAAAAABAD"
-  />
-  <ReviewCard
-    naam="jemoeder"
-    review="jevader"
-    url="https://www.google.com/url?sa=i&url=https%3A%2F%2Ftwitter.com%2Fstupidcatsfr&psig=AOvVaw2ZRk8YVJZkZr3HpaGCN2sz&ust=1705656053545000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCLCvj4zO5oMDFQAAAAAdAAAAABAD"
-  />
-  <ReviewCard
-    naam="jemoeder"
-    review="jevader"
-    url="https://www.google.com/url?sa=i&url=https%3A%2F%2Ftwitter.com%2Fstupidcatsfr&psig=AOvVaw2ZRk8YVJZkZr3HpaGCN2sz&ust=1705656053545000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCLCvj4zO5oMDFQAAAAAdAAAAABAD"
-  />
-  <ReviewCard
-    naam="jemoeder"
-    review="jevader"
-    url="https://www.google.com/url?sa=i&url=https%3A%2F%2Ftwitter.com%2Fstupidcatsfr&psig=AOvVaw2ZRk8YVJZkZr3HpaGCN2sz&ust=1705656053545000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCLCvj4zO5oMDFQAAAAAdAAAAABAD"
-  />
-  <ReviewCard
-    naam="jemoeder"
-    review="jevader"
-    url="https://www.google.com/url?sa=i&url=https%3A%2F%2Ftwitter.com%2Fstupidcatsfr&psig=AOvVaw2ZRk8YVJZkZr3HpaGCN2sz&ust=1705656053545000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCLCvj4zO5oMDFQAAAAAdAAAAABAD"
-  />
-  <ReviewCard
-    naam="jemoeder"
-    review="jevader"
-    url="https://www.google.com/url?sa=i&url=https%3A%2F%2Ftwitter.com%2Fstupidcatsfr&psig=AOvVaw2ZRk8YVJZkZr3HpaGCN2sz&ust=1705656053545000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCLCvj4zO5oMDFQAAAAAdAAAAABAD"
-  />
-  <ReviewCard
-    naam="jemoeder"
-    review="jevader"
-    url="https://www.google.com/url?sa=i&url=https%3A%2F%2Ftwitter.com%2Fstupidcatsfr&psig=AOvVaw2ZRk8YVJZkZr3HpaGCN2sz&ust=1705656053545000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCLCvj4zO5oMDFQAAAAAdAAAAABAD"
-  />
-  <ReviewCard
-    naam="jemoeder"
-    review="jevader"
-    url="https://www.google.com/url?sa=i&url=https%3A%2F%2Ftwitter.com%2Fstupidcatsfr&psig=AOvVaw2ZRk8YVJZkZr3HpaGCN2sz&ust=1705656053545000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCLCvj4zO5oMDFQAAAAAdAAAAABAD"
-  />
+ 
+ 
 </section>
 
 <style>
